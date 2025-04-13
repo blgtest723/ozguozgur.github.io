@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ozgu's World</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 40px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+    .section {
+      width: 300px;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;  /* Set a max width */
+      height: 200px;     /* Set a fixed height */
+      object-fit: cover; /* This makes sure the image covers the space without distortion */
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+  
+  
+</head>
+<body>
+
+    <h1>Welcome to My World 🌍</h1>
+    <p>Explore my <strong>Work Experience</strong> and <strong>Travel Adventures</strong></p>
+  
+    <div class="container">
+      <div class="section">
+        <a href="work.html">
+          <img src="images/ozgu_ozgur_work2.jpg" alt="Work Experience">
+          <h2>Work Experience</h2>
+        </a>
+      </div>
+  
+      <div class="section">
+        <a href="travel.html">
+          <img src="images/ozgu_ozgur_travel.jpeg" alt="Travel">
+          <h2>Travel Stories</h2>
+        </a>
+      </div>
+    </div>
+  
+  </body>
+  
+</html>
