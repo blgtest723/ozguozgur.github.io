@@ -6,99 +6,145 @@
   <title>Work Experience</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
     }
-    h1 {
-      text-align: center;
-      margin-top: 50px;
-    }
-    .article-list {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 50px;
-    }
-    .article {
-      width: 250px;
-      text-align: center;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    header {
+      background-color: #f5f5f5;
       padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
     }
-    img {
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 5px;
+      font-style: italic;
+      color: #777;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 20px;
+      gap: 40px;
+    }
+
+    .card {
+      width: 280px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
       width: 100%;
-      height: 150px;
+      height: 200px;
       object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
+
+    .card h2 {
+      margin: 15px 0;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      padding: 30px;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+    }
+
     a {
       text-decoration: none;
-      color: black;
+      color: inherit;
     }
   </style>
 </head>
 <body>
 
-  <h1>Work Experience</h1>
+  <header>
+    <h1><a href="https://ozguozgur.com">ÖZGÜ ÖZGÜR</a></h1>
+    <p>solo gezenti bir ik'çı</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/ozgu.ozgur/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/ozguozgur/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+    </div>
+  </header>
 
-  <div class="article-list">
-    <!-- Example Work Article 1 -->
-    <div class="article">
+  <div class="container">
+    <div class="card">
       <a href="articles/work1_blogger.html">
         <img src="images/work1-thumbnail.jpg" alt="Work Article 1">
-        <h2>Dur, Düşün, Devam Et: Kafa İzni Stratejisi
-        </h2>
+        <h2>Dur, Düşün, Devam Et: Kafa İzni Stratejisi</h2>
       </a>
     </div>
-
-    <!-- Example Work Article 2 -->
-    <div class="article">
-        <a href="articles/work2_blogger.html">
-          <img src="images/is_gezisi.jpg" alt="Work Article 2">
-          <h2>İş Gezginliği/Job Hopping
-          </h2>
-        </a>
-      </div>
-
-
-    <!-- Example Work Article 3 -->
-    <div class="article">
+    <div class="card">
+      <a href="articles/work2_blogger.html">
+        <img src="images/is_gezisi.jpg" alt="Work Article 2">
+        <h2>İş Gezginliği / Job Hopping</h2>
+      </a>
+    </div>
+    <div class="card">
       <a href="articles/work3_blogger.html">
         <img src="images/job_interview.jpg" alt="Work Article 3">
-        <h2>İşe Alım Süreci
-        </h2>
-      </a>
-    </div>    
-    
-
-    <!-- Example Work Article 4 -->
-    <div class="article">
-      <a href="articles/work4_blogger.html">
-        <img src="images/academic_work.jpg" alt="Work Article 4">
-        <h2>Bilgiyle Büyüyen Kariyerler
-        </h2>
+        <h2>İşe Alım Süreci</h2>
       </a>
     </div>
-
-
-  <!-- Example Work Article 5 -->
-  <div class="article">
-    <a href="articles/work5_blogger.html">
-      <img src="images/internship_image.jpg" alt="Work Article 5">
-      <h2>Kariyer Yolunun İlk Basamağı: Stajyerlik
-      </h2>
-    </a>
-  </div>      
-      
-    
-    <!-- Add more articles as needed -->
+    <div class="card">
+      <a href="articles/work4_blogger.html">
+        <img src="images/academic_work.jpg" alt="Work Article 4">
+        <h2>Bilgiyle Büyüyen Kariyerler</h2>
+      </a>
+    </div>
+    <div class="card">
+      <a href="articles/work5_blogger.html">
+        <img src="images/internship_image.jpg" alt="Work Article 5">
+        <h2>Kariyer Yolunun İlk Basamağı: Stajyerlik</h2>
+      </a>
+    </div>
   </div>
+
+  <footer>
+    <h3>Hazırsan başlayalım!</h3>
+    <p>Gezentiliğe ve insan kaynaklarına dair neler konuşalım?</p>
+    <p>&copy; 2025 Özgü Özgür | Tüm Hakları Saklıdır</p>
+  </footer>
 
 </body>
 </html>
